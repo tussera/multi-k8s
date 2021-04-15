@@ -2,9 +2,9 @@ docker build -t tussitos/multi-client:latest -t tussitos/multi-client:$SHA -f ./
 docker build -t tussitos/multi-server:latest -t tussitos/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t tussitos/multi-worker:latest -t tussitos/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
-docker push tussitos/multi-client
-docker push tussitos/multi-server
-docker push tussitos/multi-worker
+docker push tussitos/multi-client:latest
+docker push tussitos/multi-server:latest
+docker push tussitos/multi-worker:latest
 
 docker push tussitos/multi-client:$SHA
 docker push tussitos/multi-server:$SHA
